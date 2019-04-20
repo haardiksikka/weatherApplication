@@ -524,10 +524,10 @@ var WeatherdataService = /** @class */ (function () {
         this.http = http;
     }
     WeatherdataService.prototype.getData = function (city) {
-        return this.http.get("http://api.openweathermap.org/data/2.5/forecast?q=" + city + "&units=metric&APPID=5d0eb2eb209b8c9339fc37663921e74c");
+        return this.http.get("//api.openweathermap.org/data/2.5/forecast?q=" + city + "&units=metric&APPID=5d0eb2eb209b8c9339fc37663921e74c");
     };
     WeatherdataService.prototype.getCurrentData = function (city) {
-        return this.http.get("http://api.openweathermap.org/data/2.5/weather?q=" + city + "&units=metric&APPID=5d0eb2eb209b8c9339fc37663921e74c");
+        return this.http.get("//api.openweathermap.org/data/2.5/weather?q=" + city + "&units=metric&APPID=5d0eb2eb209b8c9339fc37663921e74c");
     };
     WeatherdataService = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Injectable"])({
